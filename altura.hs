@@ -1,6 +1,3 @@
--- Altura da Árvore
--- FINISHED
-
 
 data Tree t = Node t (Tree t) (Tree t)
             | Nilt 
