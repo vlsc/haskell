@@ -1,6 +1,3 @@
--- Devolve o seugndo elemento de uma lista maybe
--- FINISHED
-
 import Prelude hiding (Maybe (..))
 
 data Maybe a = Just a |
