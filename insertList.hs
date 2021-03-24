@@ -1,5 +1,3 @@
-
-
 data Tree t = Nilt |
                Node t (Tree t) (Tree t)
                deriving (Read, Show)
@@ -14,12 +12,3 @@ conta (t, l) = conta (insere t (head l), tail l)
 
 insertList :: Ord t => Tree t -> [t] -> Tree t
 insertList t l = fst(conta (t,l))
-
-
-
-
-
-
-
-
-
