@@ -1,5 +1,3 @@
-
-
 data Command = Forward Int | Backward Int | TurnLeft | TurnRight 
                deriving (Eq, Show, Read)
 
@@ -19,7 +17,6 @@ position (x,y) (Backward c) n | n == 0 = (x,y-c)
                          | n == 90 || n == (-270) = (x+c,y)
                          | n == -90 || n == 270 = (x-c,y)
                          | n == 180 || n == (-180) = (x,y+c)
-
 
 destination :: (Int,Int) -> [Command] -> (Int,Int)
 destination (x,y) a = direction (x,y) a 0
