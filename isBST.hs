@@ -1,4 +1,4 @@
--- FINISHED
+
 data Tree t = Nilt |
               Node t (Tree t) (Tree t)
               deriving (Read)
