@@ -1,12 +1,8 @@
--- FINISHED
-
 data Command = Forward Int | Backward Int | TurnLeft | TurnRight 
                deriving (Eq, Show, Read)
 
 data Direction = North | South | West | East
                  deriving (Read, Show)
-
-
 
 faces :: Direction -> [Command] -> Direction
 faces d [] = d
@@ -23,11 +19,9 @@ faces (West) a  | head a == (TurnLeft) = faces South (tail a)
                 | head a == (TurnRight) = faces North (tail a)
                 | otherwise = faces (aux (head a) West) (tail a)
 
-
 aux :: Command -> Direction -> Direction
 aux (Forward n) d = d
 aux (Backward n) (North) = South
 aux (Backward n) (South) = North
 aux (Backward n) (West) = East
 aux (Backward n) (East) = West
-                
