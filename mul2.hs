@@ -1,4 +1,3 @@
-
 menor :: [Int] -> [Int] -> Int
 menor l1 l2 | length l1 < length l2 = length l1
             | otherwise = length l2
@@ -14,11 +13,3 @@ add0 n | n == 0 = []
 mul2 l1 l2 | length l1 == length l2 = mult (menor l1 l2) l1 l2
            | length l1 > length l2 = mult (menor l1 l2) l1 l2 ++ add0 (length l1 - length l2)
            | otherwise = mult (menor l1 l2) l1 l2 ++ add0 (length l2 - length l1)
-
-
-
-
-
-
-
-
