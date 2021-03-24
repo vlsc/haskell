@@ -29,9 +29,3 @@ opera (x,"div",y) | (read y::Int)==0 || y == "" = Nothing
 
 safeCalc :: String -> IO ()
 safeCalc a = print(opera(separa1 a [], op a, separa2 a []))
-
-
-
-
-
-
