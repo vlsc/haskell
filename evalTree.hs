@@ -1,4 +1,4 @@
--- FINISHED
+
 data Ops = SUM | MUL | SUB
            deriving (Read)
 
