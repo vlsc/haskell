@@ -1,5 +1,3 @@
--- FINISHEEEEEEEEEED
-
 data Cmd = Cursor Int |
            Backspace Int |
            Delete Int |
